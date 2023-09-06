@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/events.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="index.html">Home</a></li>
+            <li class="navbar-item"><a href="events.html">Events</a></li>
+        </ul>
+    </nav>
+    <div id="filter-sort-container">
+        <!-- Select tag to filter by category -->
+        <select id="category-filter">
+            <option value="">Filter by Category</option>
+            <option value="Music">Music</option>
+            <option value="Sports">Sports</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+    
+        <!-- Select tag to sort by price -->
+        <select id="price-sort">
+            <option value="">Sort by Price</option>
+            <option value="asc">Price: Low to High</option>
+            <option value="desc">Price: High to Low</option>
+        </select>
+    </div>    
+    <!-- show cards here   -->
+    <div id="card-container"></div>
+</body>
+</html>
+<script src="../scripts/events.js"></script>

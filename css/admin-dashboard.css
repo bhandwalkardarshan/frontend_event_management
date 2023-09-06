@@ -1,0 +1,18 @@
+/* Add this CSS to position the form and table side by side */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* To prevent overflowing content */
+}
+
+/* Media query to adjust the layout for smaller screens */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+}

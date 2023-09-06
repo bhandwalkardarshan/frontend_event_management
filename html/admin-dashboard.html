@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/form-styles.css">
+    <link rel="stylesheet" href="../css/table-styles.css">
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="index.html">Home</a></li>
+            <li class="navbar-item"><a href="events.html">Events</a></li>
+        </ul>
+    </nav>
+    <div class="content-container">
+    <!-- form to post event -->
+    <form id="event-form">
+        <div class="form-group">
+            <label for="poster">Poster Image URL:</label>
+            <input type="text" id="poster" name="poster" placeholder="Enter poster image URL" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Name of the Event:</label>
+            <input type="text" id="name" name="name" placeholder="Enter event name" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description of the Event:</label>
+            <textarea id="description" name="description" placeholder="Enter event description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter event location" required>
+        </div>
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Select Category</option>
+                <option value="Music">Music</option>
+                <option value="Sports">Sports</option>
+                <option value="Workshop">Workshop</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" placeholder="Enter event price" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- event table -->
+    <table id="event-table">
+        <thead>
+            <tr>
+                <th>Name of the Event</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically added here -->
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
+<script src="../scripts/admin-dashboard.js"></script>

@@ -1,0 +1,33 @@
+/* Add some basic styles for better appearance */
+body {
+    font-family: Arial, sans-serif;
+}
+/* Basic styling for the navigation bar */
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Style the links */
+.navbar-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-item a:hover {
+    color: #bebbb9; /* Change the color on hover */
+}

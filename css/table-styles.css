@@ -1,0 +1,42 @@
+/* table-styles.css */
+
+#event-table {
+    width: 60%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-left: 2%;
+}
+
+#event-table th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+}
+
+#event-table td {
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+#event-table button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+#event-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    #event-table {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
